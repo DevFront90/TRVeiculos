@@ -7,36 +7,35 @@
 
 /* header */
 header {
-    padding: 20px 2% 35px 2%;
     height: 100px;
+    padding: 0 2%;
+    background-color: var(--color-fisrt);
 }
 
-header .logo {
-    float: left;
+.flex-position  {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    justify-content: space-between;
 }
 
 header .logo > .flex {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
 header .logo > .flex img {
-    width: 32px;
-    height: 32px;
+    width: 35px;
+    height: 35px;
 }
 
 header .logo > .flex  h2 a {
-    color: var( --color-second);
-    font-size: 20px;
+    color: var(--color-Third);
+    font-size: 25px;
     font-weight: bold;
-    font-family: var(--font-Roboto-condensed);
+    font-family: var( --font-poetsen-one);
     text-decoration: none;
-}
-
-header nav.desktop {
-    float: right;
-    position: relative;
-    top: 20px;
 }
 
 header nav.desktop ul {
@@ -52,16 +51,112 @@ header nav.desktop ul li {
 }
 
 header nav.desktop ul li a {
-    color: var(--color-fisrt);
+    color: var(--color-Third);
     text-decoration: none;
+    position: relative;
+    transition: .5s ease-in;
 }
+
+header nav.desktop ul li a:hover {
+    color: var(--color-second);
+}
+
+header nav.desktop ul li a::after {
+    content: " ";
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    background: var(--color-second);
+    bottom: -5px;
+    left: 0;
+    transition: .5s ease-in-out;
+}
+
+header nav.desktop ul li a:hover::after {
+    width: 100%;
+}
+
+
+.button-nav .btn-menu {
+   padding: 10px 30px;
+   border: none;
+   font-size: 16px;
+   font-weight: bold;
+   text-transform: uppercase;
+   font-family: var(--font-Roboto-condensed);
+   background: var(--color-second);
+   border-bottom: 5px solid var(--color-Fourth);
+   cursor: pointer;
+}
+
+.button-nav .btn-menu:hover {
+    color: var(--color-Third);
+   background-color: var(--color-Fourth);
+}
+
+.list-mobile {
+    display: none;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+    cursor: pointer;
+}
+
+
 /***/
 
 /* section banner */
 section.banner {
     width: 100%;
-    height:calc(100vh - 100px);
+    height:80vh;
     min-height: 600px;
+    padding: 0 2%;
+    max-height: 800px;
     background: var(--color-fisrt);
+    background-repeat: no-repeat;
+    background-position: right, bottom;
+    background-size: contain;
 }
+
+
+section.banner .text-banner {
+    padding: 20px;
+}
+
+section.banner .text-banner .text-banner-single {
+    width: 310px;
+    height: 38px;
+    padding: 10px 20px;
+    color: var(--color-Third);
+    font-size: 16px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: var(--font-Roboto-condensed);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+section.banner .text-banner .text-banner-single:nth-of-type(2) {
+    position: relative;
+    left: -10px;
+    width: 230px;
+}
+
+section.banner .text-banner .text-banner-single:nth-of-type(3) {
+    width: 180px;
+    position: relative;
+    left: -15px;
+}
+
+section.banner .text-banner .text-banner-single:nth-of-type(4) {
+    width: 330px;
+    position: relative;
+    left: -23px;
+     padding: 10px 20px;
+    color: var(--color-fisrt);
+}
+
 /****/

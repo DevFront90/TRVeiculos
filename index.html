@@ -8,18 +8,21 @@
     <!--link css-->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/resete.css" />
+    <link rel="stylesheet" href="./assets/css/media.css"/>
     <!---->
 </head>
 
 <body>
     <!--header-->
-    <header>
+    <header style="border-bottom: 3px solid #eb2d2d;">
         <div class="container">
 
-            <div class="logo">
+          <div class="flex-position">
+
+               <div class="logo">
                 <div class="flex">
-                    <h2><a href="#">tr veículos especiais</a></h2>
-                    <img src="./assets/img/icon-logo.png" alt="icon-logo" />
+                    <h2><a href="#">tr veículos</a></h2>
+                    <img src="./assets/img/racing.png" alt="racing" />
                 </div>
             </div>
 
@@ -27,20 +30,38 @@
                 <ul>
                     <li><a style="color: #eb2d2d;" href="#">Home</a></li>
                     <li><a href="#">Venda</a></li>
-                    <li><a href="#">Galeria</a></li>
                     <li><a href="#">Eventos</a></li>
                     <li><a href="#">Sobre nós</a></li>
                     <li><a href="#">Contato</a></li>
                 </ul>
             </nav>
-              <div class="clear"></div>
+
+            <div class="button-nav">
+                <button class="btn-menu">galeria de veículos</button>
+            </div>
+
+            <div style="background-image: url('./assets/img/menu.png');" class="list-mobile"></div>
+
+          </div>
+              
         </div>
 
     </header>
     <!---->
     
     <!--section banner-->
-    <section class="banner">
+    <section style="background-image: linear-gradient(rgba(0, 0, 0, 0.712),rgba(0, 0, 0, 0.418),rgba(0, 0, 0, 0.781)),  url('./assets/img/banner.jpg');"  class="banner">
+
+           <div class="container">
+
+                <div class="text-banner">
+                    <div style="background-image: url('./assets/img/box-text.png');" class="text-banner-single">consultoria</div>
+                    <div style="background-image: url('./assets/img/box-text.png');" class="text-banner-single">compra</div>
+                    <div style="background-image: url('./assets/img/box-text.png');" class="text-banner-single">venda</div>
+                    <div style="background-image: url('./assets/img/box-white-text.png');" class="text-banner-single">contato@rmveiculosespeciais.com.br</div>
+                </div>
+
+           </div>
 
     </section>
 </body>

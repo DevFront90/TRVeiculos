@@ -1,0 +1,67 @@
+/* imports css */
+@import "./color.css";
+@import "./fonts.css";
+/****/
+
+/* Classes gerais css */
+
+/* header */
+header {
+    padding: 20px 2% 35px 2%;
+    height: 100px;
+}
+
+header .logo {
+    float: left;
+}
+
+header .logo > .flex {
+    display: flex;
+    align-items: center;
+}
+
+header .logo > .flex img {
+    width: 32px;
+    height: 32px;
+}
+
+header .logo > .flex  h2 a {
+    color: var( --color-second);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: var(--font-Roboto-condensed);
+    text-decoration: none;
+}
+
+header nav.desktop {
+    float: right;
+    position: relative;
+    top: 20px;
+}
+
+header nav.desktop ul {
+    list-style-type: none;
+}
+
+header nav.desktop ul li {
+    float: left;
+    padding: 0 20px;
+    font-size: 18px;
+    font-weight: normal;
+    font-family: var(--font-Roboto-condensed);
+}
+
+header nav.desktop ul li a {
+    color: var(--color-fisrt);
+    text-decoration: none;
+}
+/***/
+
+/* section banner */
+section.banner {
+    width: 100%;
+    height:calc(100vh - 100px);
+    min-height: 600px;
+    background: var(--color-fisrt);
+}
+/****/
